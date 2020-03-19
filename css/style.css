@@ -1,0 +1,29 @@
+*{
+    text-align: center;
+    margin: 0;
+}
+
+#main{
+    background-color: green;
+    padding-top: 25%;
+    padding-bottom: 25%;
+}
+
+#info{
+    background-color: grey;
+    padding: 5% 10% 5% 10%;
+}
+
+#info p{
+    line-height: 30px;
+    margin-top: 2rem;
+}
+
+#details{
+    background-color: lightblue;
+}
+
+#details img{
+    margin-left: 50px;
+    margin-right: 50px;
+}
