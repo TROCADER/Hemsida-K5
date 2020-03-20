@@ -20,10 +20,35 @@
 }
 
 #details{
-    background-color: lightblue;
+    background-color: lightcoral;
 }
 
-#details img{
-    margin-left: 50px;
-    margin-right: 50px;
+#details_pc{
+    display: none;
+    grid-template-columns: 4fr 2fr 1fr 2fr 4fr;
+    background-color: lightblue;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+#details-pic1_pc{
+    grid-column: 2;
+}
+
+#details-pic2_pc{
+    grid-column: 4;
+}
+
+#details_mobile{
+    display: inline-block;
+    margin-top: 5rem;
+}
+
+#details_mobile ul li{
+    list-style: none;
+}
+
+#details_mobile p{
+    max-width: 250px;
+    margin-bottom: 2.5rem;
 }
