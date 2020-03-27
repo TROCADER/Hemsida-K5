@@ -4,6 +4,19 @@
     margin: 0;
 }
 
+ul li{
+    list-style: none;
+}
+
+.mapouter{
+    position:relative;
+}
+
+.gmap_canvas{
+    overflow:hidden;
+    background:none!important;
+}
+
 #main{
     background-color: green;
     padding-top: 25%;
@@ -45,35 +58,72 @@
     margin-top: 5rem;
 }
 
-#details_mobile ul li{
-    list-style: none;
-}
-
 #details_mobile p{
     max-width: 250px;
     margin-bottom: 2.5rem;
 }
 
-#form{
-    margin-bottom: 3rem;
+#form_pc{
+    display: none;
+    background-color: blue;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
-#form_pc_info{
-    display: grid;
-    grid-row: 1fr;
-    grid-template-columns: 1fr 1fr;
-
-    padding-top: 2rem;
-}
-
-#form_pc_info p{
+#form_pc p{
     margin-left: 2rem;
     margin-right: 2rem;
 }
 
-#form_pc_info form{
+#form_pc form{
     margin-top: auto;
     margin-bottom: auto;
+}
+
+#lorem{
+    grid-row: 2;
+    grid-column: 2;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#find{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#adress{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#email{
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#phone{
+    grid-row: 1;
+    grid-column: 4;
+}
+
+#form_pc-form{
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#form_mobile{
+    background-color: blue;
+    display: inline-block;
+    padding-bottom: 5rem;
+}
+
+#form_mobile ul li{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 @media only screen and (min-width: 600px){
@@ -82,6 +132,16 @@
     }
 
     #details_pc{
+        display: grid;
+    }
+}
+
+@media only screen and (min-width: 950px){
+    #form_mobile{
+        display: none;
+    }
+
+    #form_pc{
         display: grid;
     }
 }
