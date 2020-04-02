@@ -4,17 +4,51 @@
     margin: 0;
 }
 
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 0;
+    position: sticky;
+    background-color: lightgray;
+}
+
 ul li{
     list-style: none;
 }
 
-.mapouter{
-    position:relative;
+#gmap_canvas{
+    position: relative;
+    overflow: hidden;
+    background: none!important;
 }
 
-.gmap_canvas{
-    overflow:hidden;
-    background:none!important;
+#home_nav{
+    grid-column: 1;
+}
+
+#inlogg_nav{
+    grid-column: 2;
+}
+
+#info_nav{
+    grid-column: 3;
+}
+
+#map_nav{
+    grid-column: 4;
+}
+
+.navbaritem:hover{
+    background-color: yellow;
+}
+
+.navbaritem:focus{
+    background-color: yellow;
 }
 
 #main{
@@ -126,6 +160,29 @@ ul li{
     margin-right: 2rem;
 }
 
+#inlogg_form{
+    padding-top: 25%;
+}
+
+#inlogg_form label{
+    color: white;
+}
+
+#login_page{
+    background-image: url(../img/Background_image.jpg);
+}
+
+#secret{
+    margin-top: 5rem;
+    display: none;
+}
+
+#secret img{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
 @media only screen and (min-width: 600px){
     #details_mobile{
         display: none;
@@ -143,5 +200,27 @@ ul li{
 
     #form_pc{
         display: grid;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    nav{
+        grid-template-columns: 8fr 1fr 1fr 1fr 1fr;
+    }
+
+    #home_nav{
+        grid-column: 2;
+    }
+
+    #inlogg_nav{
+        grid-column: 3;
+    }
+
+    #info_nav{
+        grid-column: 4;
+    }
+    
+    #map_nav{
+        grid-column: 5;
     }
 }
