@@ -17,6 +17,14 @@ nav{
     background-color: lightgray;
 }
 
+button{
+    border-style: none;
+    background-color: red;
+    margin-top: 1rem;
+    padding: 2rem;
+    font-size: 25px;
+}
+
 ul li{
     list-style: none;
 }
@@ -109,6 +117,12 @@ ul li{
 #form_pc p{
     margin-left: 2rem;
     margin-right: 2rem;
+    text-align: left;
+    color: white;
+}
+
+#form_pc h3{
+    color: white;
 }
 
 #form_pc form{
@@ -160,6 +174,14 @@ ul li{
     margin-right: 2rem;
 }
 
+#form_mobile ul li h3{
+    color: white;
+}
+
+#form_mobile ul li p{
+    color: white;
+}
+
 #inlogg_form{
     padding-top: 25%;
 }
@@ -182,6 +204,9 @@ ul li{
     padding-bottom: 3rem;
 }
 
+.form_message label{
+    color: white;
+}
 
 @media only screen and (min-width: 600px){
     #details_mobile{
@@ -193,7 +218,7 @@ ul li{
     }
 }
 
-@media only screen and (min-width: 950px){
+@media only screen and (min-width: 1000px){
     #form_mobile{
         display: none;
     }
